@@ -452,6 +452,17 @@ ul.menu li a:hover {
   -ms-transform: matrix( 1,0,0,1.00070389328158,0,0);
   
 }
+#pricing_header{
+    text-align: left
+}
+
+.right_side {
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 3px 35px 0px rgba(160, 190, 212, 0.22);
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
 
 .pricing_title {
   font-size: 38px;
@@ -488,7 +499,9 @@ ul.menu li a:hover {
   font-family: "Lato";
   color: black;
   line-height: 0.5;
-  
+  background-color: #2adc65;
+  background-size: 58px;
+  grid-column-start: 1;
 }
 .Business {
   font-size: 24px;
@@ -496,18 +509,19 @@ ul.menu li a:hover {
   color: black;
   line-height: 1.333;
   text-align: center;
-  
+  grid-column-start: 1;
 }
 
 
 .add_button {
     background-color: rgb(6, 208, 72);
-  width: 245px;
-  height: 167px;
-  font-size: 72px;
-  font-family: "Lato";
-  color: rgb(255, 255, 255);
-  line-height: 0.528;
+    width: 245px;
+    height: 167px;
+    font-size: 72px;
+    font-family: "Lato";
+    color: rgb(255, 255, 255);
+    line-height: 0.528;
+    grid-column-start: 1;
 }
 
 ._40__OFF {
@@ -516,7 +530,8 @@ ul.menu li a:hover {
   color: rgba(0, 0, 0, 0.4);
   line-height: 1.6;
   text-align: left;
-  
+  grid-column-start: 2;
+  grid-row-start: 1;
 }
 
 .Weekly_Package {
@@ -525,6 +540,8 @@ ul.menu li a:hover {
   color: rgb(0, 0, 0);
   line-height: 1.333;
   text-align: center;
+  grid-column-start: 2;
+  grid-row-start: 2;
 }
 
 .pricing_details {
@@ -539,6 +556,10 @@ ul.menu li a:hover {
   width: 228px;
   height: 144px;
   z-index: 146;
+}
+
+.right2_side{
+    background-color: #2adc65
 }
 
 .news_title {
@@ -826,7 +847,9 @@ img.temti_pic {
     align-self: center;
 }
 .pricing{
-    grid-area: pricing
+    grid-area: pricing;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 .news{
     grid-area: news
@@ -878,3 +901,4 @@ p#shops {
     grid-row-start: 3;
     text-align: left;
 }
+
