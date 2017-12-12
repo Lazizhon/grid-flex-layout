@@ -679,25 +679,38 @@ h1.news_text_title {}
   height: 53px;
   z-index: 53;
 }
+.Enter_your_mail {
+  font-size: 15px;
+  font-family: "Poppins";
+  color: rgba(37, 41, 47, 0.502);
+  line-height: 3.905;
+  -moz-transform: matrix( 0.99987554219524,0,0,1.00000199215148,0,0);
+  -webkit-transform: matrix( 0.99987554219524,0,0,1.00000199215148,0,0);
+  -ms-transform: matrix( 0.99987554219524,0,0,1.00000199215148,0,0);
+}
+
 
 .rights {
+  margin: 5px;
   font-size: 16px;
   font-family: "Poppins";
   color: rgb(156, 156, 159);
-  line-height: 1.376;
- 
+  /* line-height: 1.376; */
   -moz-transform: matrix( 0.99990341662489,0,0,0.99999167792707,0,0);
   -webkit-transform: matrix( 0.99990341662489,0,0,0.99999167792707,0,0);
   -ms-transform: matrix( 0.99990341662489,0,0,0.99999167792707,0,0);
-  
+  grid-column-start: 2;
+  grid-column-end: span 3;
+  grid-row-start: 3;
 }
 
 .footer_facts {
+  margin: 0 auto;
   font-size: 24px;
   font-family: "Poppins";
   color: rgb(0, 213, 65);
   font-weight: bold;
-  line-height: 1.2;
+  /* line-height: 1.2; */
   text-align: right;
   -moz-transform: matrix( 0.99990341662489,0,0,0.99999167792707,0,0);
   -webkit-transform: matrix( 0.99990341662489,0,0,0.99999167792707,0,0);
@@ -819,5 +832,49 @@ img.temti_pic {
     grid-area: news
 }
 .footer{
-    grid-area: footer
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 10px 1fr 100px;
+    grid-row-gap: 78px;
+    background-image: url('footer_bg.png');
+    background-repeat: no-repeat;
+    background-position-y: -20px;
+}
+
+.footer_address {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.footer_quick_links {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.footer_about_us {
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+.footer_subs {
+    grid-column-start: 5;
+    grid-row-start: 2;
+}
+
+p#products {
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+
+p#members {
+    grid-column-start: 5;
+    grid-row-start: 3;
+    text-align: center;
+}
+
+p#shops {
+    grid-column-start: 6;
+    grid-row-start: 3;
+    text-align: left;
 }
