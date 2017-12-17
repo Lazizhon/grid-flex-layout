@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Lato|Poppins" rel="stylesheet">
-    <link rel="stylesheet" href="grid_style.css">
+    <link rel="stylesheet" href="style/custom.css">
 
     <title>Gully</title>
 </head>
@@ -42,7 +42,7 @@
             <button class="banner_button Explore_Now">Explore Now</button>
         </div>
         <div class="banner-image">
-            <img src="image.png" alt="">
+            <img src="assets/image.png" alt="" id="banner_image">
         </div>
     </div>
     <div class="what_we_do">
@@ -52,23 +52,23 @@
 
         <div class="what_we_do_tabs">
             <div class="what_we_do_tabs_1">
-                <img src="financial_advice.png" alt="" class="tabs_img">
+                <img src="assets/financial_advice.png" alt="" class="tabs_img">
                 <p class="wwd_text">Financial Advise</p>
                 <h3 class="wwd_title">Market Statics Growth &<br> Advance Analysis</h3>
             </div>
 
-            <!--<img src="divider.png" alt="">-->
+            <!--<img src="assets/divider.png" alt="">-->
 
             <div class="what_we_do_tabs_2">
-                <img src="market_analysis.png" alt="" class="tabs_img">
+                <img src="assets/market_analysis.png" alt="" class="tabs_img">
                 <p class="wwd_text">Market Analysis</p>
                 <h3 class="wwd_title">Market Statics Growth &<br> Advance Analysis</h3>
             </div>
 
-            <!--<img src="divider.png" alt="">-->
+            <!--<img src="assets/divider.png" alt="">-->
 
             <div class="what_we_do_tabs_3">
-                <img src="ruby.png" alt="" class="tabs_img">
+                <img src="assets/ruby.png" alt="" class="tabs_img">
                 <p class="wwd_text">Web Solution</p>
                 <h3 class="wwd_title">Market Statics Growth &<br> Advance Analysis</h3>
             </div>
@@ -77,29 +77,34 @@
 
     <div class="about_us">
 
-        <img src="about_image.png" alt="" class="about_us_image">
+        <img src="assets/about_image.png" alt="" class="about_us_image">
 
 
         <div class="about_us_main">
 
             <h2 class="about_title">We’r a dynamic team of <br> creatives people innovation<br> & Marketing Expert.
             </h2>
-            <img src="icon.png" alt="">
-            <h3 class="Best_Digital_Agency_in_Asia">Best Digital Agency in Asia</h3>
-            <p class="about_us_text">We provide marketing services to startups and small businesses to looking for a partner of their digital media,
-                design & dev, lead generation, and communications requirents. We work with you, not for you. Although we
-                have great resources.
-            </p>
+            <div class="about_grid">
+                <img src="assets/icon.png" alt="" class="about_icon">
+                <h3 class="Best_Digital_Agency_in_Asia">Best Digital Agency in Asia</h3>
+                <p class="about_us_text">We provide marketing services to startups and small businesses to looking for a partner of their digital
+                    media, design & dev, lead generation, and communications requirents. We work with you, not for you. Although
+                    we have great resources.
+                </p>
 
-            <img src="sign.png" alt="">
+                <img src="assets/sign.png" alt="" class="sign_image">
+            </div>
 
 
         </div>
         <button class="about_button">
-                <p>Learn More </p>
-                <p>More About us</p>
-                <img src="about_arrow.png" alt="">
-            </button>
+            <p class="learn_more">Learn More </p>
+
+            <div class="about_button_text">
+                <p class="more_abt_us">More About us</p>
+                <img src="assets/about_arrow.png" alt="" class="about_arrow">
+            </div>
+        </button>
 
     </div>
     <div class="about_company_facts">
@@ -133,14 +138,14 @@
 
 
     <div class="gallery">
-        <img src="gallery_image.png" alt="gallery image" class="gallery_image" id="gallery_image_1">
-        <img src="gallery_image.png" alt="gallery image" class="gallery_image" id="gallery_image_2">
-        <img src="gallery_image.png" alt="gallery image" class="gallery_image" id="gallery_image_3">
-        <img src="gallery_image.png" alt="gallery image" class="gallery_image" id="gallery_image_4">
+        <img src="assets/gallery_image.png" alt="gallery image" class="gallery_image" id="gallery_image_1">
+        <img src="assets/gallery_image.png" alt="gallery image" class="gallery_image" id="gallery_image_2">
+        <img src="assets/gallery_image.png" alt="gallery image" class="gallery_image" id="gallery_image_3">
+        <img src="assets/gallery_image.png" alt="gallery image" class="gallery_image" id="gallery_image_4">
     </div>
 
     <div class="services">
-        <img src="services_image.png" alt="" class="services_image">
+        <!--<img src="assets/services_image.png" alt="" class="services_image">-->
 
         <div class="services_main">
             <h4 class="section_header">Our Services</h4>
@@ -151,8 +156,8 @@
                 <a href="#" class="link_to_all_services">See All Services</a>
             </div>
             <div class="offered_services">
-                <div class="service_type">
-                    <img src="business_consulting.png" alt="" class="service_type_image">
+                <div class="service_type" id="service_type_1">
+                    <img src="assets/business_consulting.png" alt="" class="service_type_image">
                     <div class="services_text">
 
                         <h2 class="service_title">Business Consulting</h2>
@@ -160,24 +165,24 @@
                     </div>
 
                 </div>
-                <div class="service_type">
-                    <img src="seo_smm_barchar.png" alt="" class="service_type_image">
+                <div class="service_type" id="service_type_2">
+                    <img src="assets/seo_smm_barchar.png" alt="" class="service_type_image">
                     <div class="services_text">
                         <h2 class="service_title">SEO & SMM services</h2>
                         <p class="service_descrpt">Lorem ipsum dolor sit amet, percipitur sadipscing ea mea.</p>
 
                     </div>
                 </div>
-                <div class="service_type">
-                    <img src="interface_design.png" alt="" class="service_type_image">
+                <div class="service_type" id="service_type_3">
+                    <img src="assets/interface_design.png" alt="" class="service_type_image">
                     <div class="services_text">
                         <h2 class="service_title">Interface Design</h2>
                         <p class="service_descrpt">Lorem ipsum dolor sit amet, percipitur sadipscing ea mea.</p>
 
                     </div>
                 </div>
-                <div class="service_type">
-                    <img src="smartphone.png" alt="" class="service_type_image">
+                <div class="service_type" id="service_type_4">
+                    <img src="assets/smartphone.png" alt="" class="service_type_image" id="special_service_type_image">
                     <div class="services_text">
                         <h2 class="service_title">Apps Development</h2>
                         <p class="service_descrpt">Lorem ipsum dolor sit amet, percipitur sadipscing ea mea.</p>
@@ -193,7 +198,7 @@
     </div>
 
     <div class="testimonial">
-        <img src="testimonial_image.png" alt="" class="about_us_image">
+        <img src="assets/testimonial_image.png" alt="" class="about_us_image">
         <div class="about_us_main">
 
             <p class="section_header">Testimonials</p>
@@ -205,11 +210,11 @@
 
             <div class="testim_user_info">
 
-                <img src="testimonial_user_image.png" alt="" class="temti_pic">
+                <img src="assets/testimonial_user_image.png" alt="" class="temti_pic">
                 <p class="testim_name"><strong>Rashed Kabir</strong> <br><span class="testim_nameP">Gazipur</span></p>
                 <div class="prev_next">
-                    <img src="prev_testimonial.png" alt="">
-                    <img src="next_testimonial.png" alt="">
+                    <img src="assets/prev_testimonial.png" alt="">
+                    <img src="assets/next_testimonial.png" alt="">
                 </div>
             </div>
         </div>
@@ -221,15 +226,19 @@
             <p class="section_header" id="pricing_header">Our pricing</p>
             <h1 class="pricing_title">Not any hidden<br> charge, Choose your<br> pricing plan</h1>
             <p class="pricing_text">We have differe type of pricing table to choose with your need with resonable price. </p>
-            <button class="Rounded_Rectangle_548_copy">Monthly | Yearly</button>
+            <label class="switch">
+  <input type="checkbox" checked>
+  <div class="slider round"><span class="on">Monthly</span><span class="off">Yearly</span></div>
+  <p>Monthly</p>
+</label>
         </div>
 
         <div class="right_side">
             <!--<p class="dollar"></p>-->
             <div class="right2_side">
-                <p class="_96_99">$96.99</p>
+                <p class="_96_99"><span class="power_up">$</span>96.<span class="power_up">99</span></p>
                 <p class="Business">Business</p>
-                <a href="#" class="add_button">+</a>
+                <buttona class="add_button">+</buttona>
             </div>
             <p class="_40__OFF">40% OFF</p>
             <p class="Weekly_Package">Weekly Package</p>
@@ -240,45 +249,45 @@
     </div>
 
     <div class="news">
-        <p class="section_header">Our News</p>
+        <p class="section_header our_news">Our News</p>
         <h1 class="news_title">News from our company</h1>
 
         <div class="news_articles">
             <div class="news_article">
-                <img src="news_image.png" alt="" class="news_image">
+                <img src="assets/news_image.png" alt="" class="news_image">
                 <p class="news_name">Rashed Ka.</p>
-                <h1 class="news_text_title">Challange yourself to win the future</h1>
+                <h1 class="news_text_title" id="news_text_title1">Challange yourself to win the future</h1>
                 <p class="news_text">Their testimonial videos aren't production quality, but they get message across, cover useful & relevant
                     information with tips.
                 </p>
-                <a href="#" class="More_Details">More Details <span><img src="news_arrow.png" alt=""></span></a>
+                <a href="#" class="More_Details">More Details <span><img src="assets/news_arrow.png" alt=""></span></a>
             </div>
             <div class="news_article">
-                <img src="news_image.png" alt="" class="news_image">
+                <img src="assets/news_image.png" alt="" class="news_image">
                 <p class="news_name">Rashed Ka.</p>
-                <h1 class="news_text_title">Challange yourself to win the future</h1>
+                <h1 class="news_text_title" id="news_text_title2">Challange yourself to win the future</h1>
                 <p class="news_text">Their testimonial videos aren't production quality, but they get message across, cover useful & relevant
                     information with tips.
                 </p>
-                <a href="#" class="More_Details">More Details <span><img src="news_arrow.png" alt=""></span></a>
+                <a href="#" class="More_Details">More Details <span><img src="assets/news_arrow.png" alt=""></span></a>
             </div>
             <div class="news_article">
-                <img src="news_image.png" alt="" class="news_image">
+                <img src="assets/news_image.png" alt="" class="news_image">
                 <p class="news_name">Rashed Ka.</p>
-                <h1 class="news_text_title">Challange yourself to win the future</h1>
+                <h1 class="news_text_title" id="news_text_title3">Challange yourself to win the future</h1>
                 <p class="news_text">Their testimonial videos aren't production quality, but they get message across, cover useful & relevant
                     information with tips.
                 </p>
-                <a href="#" class="More_Details">More Details <span><img src="news_arrow.png" alt=""></span></a>
+                <a href="#" class="More_Details">More Details <span><img src="assets/news_arrow.png" alt=""></span></a>
             </div>
             <div class="news_article">
-                <img src="news_image.png" alt="" class="news_image">
+                <img src="assets/news_image.png" alt="" class="news_image">
                 <p class="news_name">Rashed Ka.</p>
-                <h1 class="news_text_title">Challange yourself to win the future</h1>
+                <h1 class="news_text_title" id="news_text_title4">Challange yourself to win the future</h1>
                 <p class="news_text">Their testimonial videos aren't production quality, but they get message across, cover useful & relevant
                     information with tips.
                 </p>
-                <a href="#" class="More_Details">More Details <span><img src="news_arrow.png" alt=""></span></a>
+                <a href="#" class="More_Details">More Details <span><img src="assets/news_arrow.png" alt=""></span></a>
             </div>
         </div>
 
@@ -305,10 +314,10 @@
         <div class="footer_subs">
             <p class="footer_title">Subscribe Us</p>
             <input type="text" placeholder="Enter your mail" class="input Enter_your_mail">
-            <a href="http://facebook.com"><img src="facebook.png" alt=""></a>
-            <a href="http://twitter.com"><img src="twitter.png" alt="" class=""></a>
-            <a href="http://dribble.com"><img src="dribble.png" alt=""></a>
-            <a href="http://plus.google.com"><img src="google_plus.png" alt=""></a>
+            <a href="http://facebook.com" class="socialM"><img src="assets/facebook.png" alt="" ></a>
+            <a href="http://twitter.com"  class="socialM"><img src="assets/twitter.png" alt="" ></a>
+            <a href="http://dribble.com" class="socialM"><img src="assets/dribble.png" alt="" ></a>
+            <a href="http://plus.google.com" class="socialM"><img src="assets/google_plus.png" alt="" ></a>
         </div>
         <p class="rights">© 2017 CreativeGigs. All rights reserved</p>
         <p class="footer_facts" id="products">8,997 <span class="black">Products  </span></p>
